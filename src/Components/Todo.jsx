@@ -1,16 +1,18 @@
-const Todo = ({ todo, removerTodo }) => {
+const Todo = ({ todo, removeTodo, completeTodo }) => {
   return (
     <div
       className="todo"
-      style={{ textDecoration: todo.isCompleted ? "line-throung" : todo }}
+      style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
     >
       <div className="content">
         <p className="category">{todo.category}</p>
         <p>{todo.text}</p>
       </div>
       <div>
-        <button className="complete">Completar</button>
-        <button className="remove" onClick={() => removerTodo(todo.id)}>
+        <button className="complete" onClick={() => completeTodo(todo.id)}>
+          Completar
+        </button>
+        <button className="remove" onClick={() => removeTodo(todo.id)}>
           X
         </button>
       </div>
