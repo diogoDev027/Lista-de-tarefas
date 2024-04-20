@@ -11,7 +11,7 @@ function App() {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: "Vamos para casa",
+      text: "Ir para academia",
       category: "Pessoal",
       isCompleted: false,
     },
@@ -23,7 +23,7 @@ function App() {
     },
     {
       id: 3,
-      text: "Fazer uma planilha",
+      text: "Corrigir os bugs do código",
       category: "Trabalho",
       isCompleted: false,
     },
